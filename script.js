@@ -1,10 +1,11 @@
 let users = {
-    "name": "Borja",
-    "pass": "1234"
+    name: "Borja",
+    pass: "1234"
 };
 
-const miFunsion = (name, pass) => {
-    if (!window.sessionStorage){
-        
-    }
+const miFunsion = () => {
+
+        localStorage.setItem(JSON.stringify([users]));
+    
 }
+miFunsion()
